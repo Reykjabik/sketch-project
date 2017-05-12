@@ -8,24 +8,23 @@ $(function(){
 	function createNewTable (len) {
 
 		$table = $("#table");
-		tableWidth = parseInt($table.css("width"));		// Width: 500px
+		tableWidth = parseInt($table.css("width"));		// retrieve table width
 		
-		cellWidth = (tableWidth-1) / len;// cellWidth: 71.4285px (no side margins)
-		alert("Ancho de la tabla: " + tableWidth + ". Ancho de la celda " + cellWidth);
-
+		cellWidth = (tableWidth-1) / len;	// get proportional cell width
+	
 		cell = "<div class='cell'></div>";
 
 		for (var i = 0; i < len*len; i++){
-			$table.append(cell);
+			$table.append(cell);			// add cells
 		}
 
 		$(".cell").css({
-			"width": cellWidth,
+			"width": cellWidth,				// give them their new width
 			"height": cellWidth,
 		});
 	}
 
-	function getRandomColor() {
+	function getRandomColor() {				// returns a random HEX color
 	    var letters = '0123456789ABCDEF';
 	    var color = '#';
 	    for (var i = 0; i < 6; i++ ) {
@@ -34,9 +33,9 @@ $(function(){
 	    return color;
 	}
 
-	function listenForHover(){
+	function listenForHover(){				// if RANDOM, random color. otherwise a secondary color
 		$(".cell").hover(function() {
-			if ($table.hasClass("random-table")){
+			if ($table.hasClass("random-table")){	
 			$(this).css("background-color", getRandomColor());
 				$(this).addClass("random-cell");
 			}else {

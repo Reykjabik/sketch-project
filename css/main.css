@@ -35,14 +35,9 @@ html #wrapper #table, body #wrapper #table {
   width: 40px;
   height: 40px;
   margin: 0;
-  box-sizing: content-box;
   vertical-align: top;
   background-color: tomato;
   display: inline-block;
-}
-
-.row {
-  margin-top: -4px;
 }
 
 .hovered {
@@ -50,7 +45,7 @@ html #wrapper #table, body #wrapper #table {
 }
 
 .random-cell {
-  background-color: #cadd12;
+  background-color: #000;
 }
 
 /*# sourceMappingURL=main.css.map */

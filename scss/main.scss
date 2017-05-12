@@ -1,9 +1,7 @@
 $table-width: 500px;
+$cell-width: 40px;
 $cell-color: tomato;
 $hovered-color: #23ABBB;
-$red: random(256)-1;
-$green: random(256)-1;
-$blue: random(256)-1;
 
 * {
 	box-sizing: border-box;
@@ -20,50 +18,49 @@ html, body {
 	line-height: 0px;
 
 		h2{
-			font-family: 'Comfortaa', cursive;
-			font-size: 3em;
+			font: {
+				family: 'Comfortaa', cursive;
+				size: 3em;
+			}
 			padding-top: 30px;
 			margin: 20px;
 		}
 
 		button {
-			font-family: 'Baloo', cursive;
-			font-size: 1em;
+			font: {
+				family: 'Baloo', cursive;
+				size: 1em;
+			}
 			width: 80px;
 			margin: 22px 0;
 			padding: 5px;
 		}
 
 		#table {
-			width: 500px;
-			height: 500px;
+			width: $table-width;
+			height: $table-width;
 			margin: 0 auto;
 		}
 	}
 }
 
 .cell {
-	width: 40px;
-	height: 40px;
+	width: $cell-width;
+	height: $cell-width;
 	margin: 0;
-	box-sizing: content-box;
 	vertical-align: top;
 	background-color: $cell-color;
 	display: inline-block;
-}
-
-.row {
-	margin-top: -4px;
 }
 
 .hovered {
 	background-color: $hovered-color;
 }
 
-.random-table {
+.random-table {				// This class acts more as a flag
 	
 }
 
 .random-cell {
-	background-color: rgb($red, $green, $blue);
+	background-color: #000;	// Just a default color
 }
