@@ -1,0 +1,69 @@
+$table-width: 500px;
+$cell-color: tomato;
+$hovered-color: #23ABBB;
+$red: random(256)-1;
+$green: random(256)-1;
+$blue: random(256)-1;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100vh;
+
+	#wrapper {
+	width: 100%;
+	text-align: center;
+	line-height: 0px;
+
+		h2{
+			font-family: 'Comfortaa', cursive;
+			font-size: 3em;
+			padding-top: 30px;
+			margin: 20px;
+		}
+
+		button {
+			font-family: 'Baloo', cursive;
+			font-size: 1em;
+			width: 80px;
+			margin: 22px 0;
+			padding: 5px;
+		}
+
+		#table {
+			width: 500px;
+			height: 500px;
+			margin: 0 auto;
+		}
+	}
+}
+
+.cell {
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	box-sizing: content-box;
+	vertical-align: top;
+	background-color: $cell-color;
+	display: inline-block;
+}
+
+.row {
+	margin-top: -4px;
+}
+
+.hovered {
+	background-color: $hovered-color;
+}
+
+.random-table {
+	
+}
+
+.random-cell {
+	background-color: rgb($red, $green, $blue);
+}

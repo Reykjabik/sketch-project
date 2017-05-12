@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100vh;
+}
+html #wrapper, body #wrapper {
+  width: 100%;
+  text-align: center;
+  line-height: 0px;
+}
+html #wrapper h2, body #wrapper h2 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 3em;
+  padding-top: 30px;
+  margin: 20px;
+}
+html #wrapper button, body #wrapper button {
+  font-family: 'Baloo', cursive;
+  font-size: 1em;
+  width: 80px;
+  margin: 22px 0;
+  padding: 5px;
+}
+html #wrapper #table, body #wrapper #table {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  box-sizing: content-box;
+  vertical-align: top;
+  background-color: tomato;
+  display: inline-block;
+}
+
+.row {
+  margin-top: -4px;
+}
+
+.hovered {
+  background-color: #23ABBB;
+}
+
+.random-cell {
+  background-color: #cadd12;
+}
+
+/*# sourceMappingURL=main.css.map */
